@@ -1,0 +1,2340 @@
+fileFormatVersion: 2
+guid: 7f19273e917f50645bba02a39593861f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8111290265642401608
+    second: evil_autism_weed_0
+  - first:
+      213: 9093702049877132355
+    second: evil_autism_weed_1
+  - first:
+      213: -5483947336876365986
+    second: evil_autism_weed_2
+  - first:
+      213: 3675901409346296622
+    second: evil_autism_weed_3
+  - first:
+      213: 8760471550105800032
+    second: evil_autism_weed_4
+  - first:
+      213: -3227417710485976518
+    second: evil_autism_weed_5
+  - first:
+      213: 2813582043338376417
+    second: evil_autism_weed_6
+  - first:
+      213: 7079153283287275863
+    second: evil_autism_weed_7
+  - first:
+      213: -4543318996477188655
+    second: evil_autism_weed_8
+  - first:
+      213: 7378550880315958091
+    second: evil_autism_weed_9
+  - first:
+      213: 3694053166298743073
+    second: evil_autism_weed_10
+  - first:
+      213: -5023534704439234731
+    second: evil_autism_weed_11
+  - first:
+      213: 5209706194448897752
+    second: evil_autism_weed_12
+  - first:
+      213: 9122712849299460780
+    second: evil_autism_weed_13
+  - first:
+      213: 5850591969697743708
+    second: evil_autism_weed_14
+  - first:
+      213: 2419736765969710450
+    second: evil_autism_weed_15
+  - first:
+      213: -3241192323509911750
+    second: evil_autism_weed_16
+  - first:
+      213: 7563963669751930320
+    second: evil_autism_weed_17
+  - first:
+      213: 6909014929145849959
+    second: evil_autism_weed_18
+  - first:
+      213: -487458034469000256
+    second: evil_autism_weed_19
+  - first:
+      213: -3041633427978683917
+    second: evil_autism_weed_20
+  - first:
+      213: 7995412531560209248
+    second: evil_autism_weed_21
+  - first:
+      213: -8478775300299621299
+    second: evil_autism_weed_22
+  - first:
+      213: -1203854464310320671
+    second: evil_autism_weed_23
+  - first:
+      213: 3150360722805325077
+    second: evil_autism_weed_24
+  - first:
+      213: 472576019083594581
+    second: evil_autism_weed_25
+  - first:
+      213: 1478312671726108823
+    second: evil_autism_weed_26
+  - first:
+      213: -279667118429968387
+    second: evil_autism_weed_27
+  - first:
+      213: 576990422714071090
+    second: evil_autism_weed_28
+  - first:
+      213: 1046610157269021487
+    second: evil_autism_weed_29
+  - first:
+      213: 8615813437921724927
+    second: evil_autism_weed_30
+  - first:
+      213: -1320847700698123473
+    second: evil_autism_weed_31
+  - first:
+      213: -2323268493749567333
+    second: evil_autism_weed_32
+  - first:
+      213: 5803038641659743537
+    second: evil_autism_weed_33
+  - first:
+      213: -9092234194824299571
+    second: evil_autism_weed_34
+  - first:
+      213: 2708217192692300842
+    second: evil_autism_weed_35
+  - first:
+      213: 3861672973070154484
+    second: evil_autism_weed_36
+  - first:
+      213: -9219342690070843951
+    second: evil_autism_weed_37
+  - first:
+      213: 5564006775592980601
+    second: evil_autism_weed_38
+  - first:
+      213: -2399904096568415873
+    second: evil_autism_weed_39
+  - first:
+      213: 5599783663834207766
+    second: evil_autism_weed_40
+  - first:
+      213: -2673846138036165491
+    second: evil_autism_weed_41
+  - first:
+      213: -2712338719381280818
+    second: evil_autism_weed_42
+  - first:
+      213: -2793082144263600620
+    second: evil_autism_weed_43
+  - first:
+      213: -4795978039648179841
+    second: evil_autism_weed_44
+  - first:
+      213: -2871966004609304376
+    second: evil_autism_weed_45
+  - first:
+      213: -2444351795952662098
+    second: evil_autism_weed_46
+  - first:
+      213: 111895305136447300
+    second: evil_autism_weed_47
+  - first:
+      213: 9071365286885237675
+    second: evil_autism_weed_48
+  - first:
+      213: 2458991411814175599
+    second: evil_autism_weed_49
+  - first:
+      213: -9150871750776977067
+    second: evil_autism_weed_50
+  - first:
+      213: 8655114942785690247
+    second: evil_autism_weed_51
+  - first:
+      213: -3710027063091804623
+    second: evil_autism_weed_52
+  - first:
+      213: -8154120920518886781
+    second: evil_autism_weed_53
+  - first:
+      213: -9106143745140389750
+    second: evil_autism_weed_54
+  - first:
+      213: 4253833030774357191
+    second: evil_autism_weed_55
+  - first:
+      213: 3443152684357693746
+    second: evil_autism_weed_56
+  - first:
+      213: 6350978845687668330
+    second: evil_autism_weed_57
+  - first:
+      213: -2512751461348363759
+    second: evil_autism_weed_58
+  - first:
+      213: 2888009262620227022
+    second: evil_autism_weed_59
+  - first:
+      213: 3407972586016039644
+    second: evil_autism_weed_60
+  - first:
+      213: -5137574811247628524
+    second: evil_autism_weed_61
+  - first:
+      213: -7400344764889641099
+    second: evil_autism_weed_62
+  - first:
+      213: -6450917621149160402
+    second: evil_autism_weed_63
+  - first:
+      213: 3525116141167896750
+    second: evil_autism_weed_64
+  - first:
+      213: 4364780347808502249
+    second: evil_autism_weed_65
+  - first:
+      213: -8890813765739468306
+    second: evil_autism_weed_66
+  - first:
+      213: -4809273238454322562
+    second: evil_autism_weed_67
+  - first:
+      213: 5938393131622089202
+    second: evil_autism_weed_68
+  - first:
+      213: 9171162293180924343
+    second: evil_autism_weed_69
+  - first:
+      213: -4199973386230098692
+    second: evil_autism_weed_70
+  - first:
+      213: -5797738837159622119
+    second: evil_autism_weed_71
+  - first:
+      213: 7013830764964908119
+    second: evil_autism_weed_72
+  - first:
+      213: 6399724888297154153
+    second: evil_autism_weed_73
+  - first:
+      213: -6462021779162237569
+    second: evil_autism_weed_74
+  - first:
+      213: -7067902536459285054
+    second: evil_autism_weed_75
+  - first:
+      213: 6248068488418067176
+    second: evil_autism_weed_76
+  - first:
+      213: -471169569840353656
+    second: evil_autism_weed_77
+  - first:
+      213: 7943590607828117486
+    second: evil_autism_weed_78
+  - first:
+      213: 3222701193793584758
+    second: evil_autism_weed_79
+  - first:
+      213: 9043433362054823775
+    second: evil_autism_weed_80
+  - first:
+      213: -4161617583355299920
+    second: evil_autism_weed_81
+  - first:
+      213: 2655257779032535550
+    second: evil_autism_weed_82
+  - first:
+      213: 1866591373821199384
+    second: evil_autism_weed_83
+  - first:
+      213: 6851222531873262908
+    second: evil_autism_weed_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: evil_autism_weed_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 925
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ff2b96587119070800000000000000
+      internalID: 8111290265642401608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 869
+        width: 44
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3440b2875d1533e70800000000000000
+      internalID: 9093702049877132355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 869
+        width: 41
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57e88ac3fa15e3b0800000000000000
+      internalID: -5483947336876365986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 869
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b91752bdc630330800000000000000
+      internalID: 3675901409346296622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_4
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 868
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dc8f8b572739970800000000000000
+      internalID: 8760471550105800032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_5
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 925
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3acda021b8e533d0800000000000000
+      internalID: -3227417710485976518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 871
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e40a9f16f9db0720800000000000000
+      internalID: 2813582043338376417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_7
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 884
+        width: 10
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759d0e877643e3260800000000000000
+      internalID: 7079153283287275863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_8
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 871
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d561b9b173e2f0c0800000000000000
+      internalID: -4543318996477188655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_9
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 868
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43e062bee0e56660800000000000000
+      internalID: 7378550880315958091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 869
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121c4a668c9e34330800000000000000
+      internalID: 3694053166298743073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_11
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 846
+        width: 40
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f6d095dc1d84ab0800000000000000
+      internalID: -5023534704439234731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_12
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 871
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d657408e289c4840800000000000000
+      internalID: 5209706194448897752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_13
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 868
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2d26290036a9e70800000000000000
+      internalID: 9122712849299460780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_14
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 869
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53469f066a713150800000000000000
+      internalID: 5850591969697743708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_15
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 869
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27db391b4c1a49120800000000000000
+      internalID: 2419736765969710450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_16
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 869
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ff77c11c8f403d0800000000000000
+      internalID: -3241192323509911750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_17
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 868
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd168dc1e898f860800000000000000
+      internalID: 7563963669751930320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_18
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 868
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768eb97f870c1ef50800000000000000
+      internalID: 6909014929145849959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_19
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 868
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cba09410833c39f0800000000000000
+      internalID: -487458034469000256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_20
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 869
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f970643382f9c5d0800000000000000
+      internalID: -3041633427978683917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_21
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 868
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b5a50065965fe60800000000000000
+      internalID: 7995412531560209248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_22
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 803
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4cf84f69c6555a80800000000000000
+      internalID: -8478775300299621299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_23
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 747
+        width: 11
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1e3853ebc0b4fe0800000000000000
+      internalID: -1203854464310320671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_24
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 746
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d7725d26458bb20800000000000000
+      internalID: 3150360722805325077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_25
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 803
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b88d2b26dee8600800000000000000
+      internalID: 472576019083594581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_26
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 747
+        width: 44
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7908131ea85048410800000000000000
+      internalID: 1478312671726108823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_27
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 747
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7ef9ecc3c6e1cf0800000000000000
+      internalID: -279667118429968387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_28
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 747
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238bca08bb1e10800800000000000000
+      internalID: 576990422714071090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_29
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 749
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23f552946e468e00800000000000000
+      internalID: 1046610157269021487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_30
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 747
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff98c5a5ca4819770800000000000000
+      internalID: 8615813437921724927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_31
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 746
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f233f7da3086bade0800000000000000
+      internalID: -1320847700698123473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 749
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9043383d9712cfd0800000000000000
+      internalID: -2323268493749567333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_33
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 746
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d8ef516e8888050800000000000000
+      internalID: 5803038641659743537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_34
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 745
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb76da2c25e1d180800000000000000
+      internalID: -9092234194824299571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_35
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 746
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cb7012035859520800000000000000
+      internalID: 2708217192692300842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_36
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 747
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fab296eb1b679530800000000000000
+      internalID: 3861672973070154484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_37
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 747
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ddabb76ba05e0080800000000000000
+      internalID: -9219342690070843951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_38
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 680
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970161bdea2573d40800000000000000
+      internalID: 5564006775592980601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_39
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 624
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79e80d70f3d1bed0800000000000000
+      internalID: -2399904096568415873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_40
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 625
+        width: 44
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6169fd5c29d66bd40800000000000000
+      internalID: 5599783663834207766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_41
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 625
+        width: 44
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84ed46aa1794ead0800000000000000
+      internalID: -2673846138036165491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_42
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 602
+        width: 31
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7adb82e46db5ad0800000000000000
+      internalID: -2712338719381280818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_43
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 624
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4168ea2969afc39d0800000000000000
+      internalID: -2793082144263600620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_44
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 624
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7922341263417db0800000000000000
+      internalID: -4795978039648179841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_45
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 624
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8b348922ab428d0800000000000000
+      internalID: -2871966004609304376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_46
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 626
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea947280efae31ed0800000000000000
+      internalID: -2444351795952662098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_47
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 624
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f11baef288d8100800000000000000
+      internalID: 111895305136447300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_48
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 624
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3aa909aa6f3ed70800000000000000
+      internalID: 9071365286885237675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_49
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 625
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f639be629a7102220800000000000000
+      internalID: 2458991411814175599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_50
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 502
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55908c540a2910180800000000000000
+      internalID: -9150871750776977067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_51
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 503
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a9ae60f252d1870800000000000000
+      internalID: 8655114942785690247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_52
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 503
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136c35dea06538cc0800000000000000
+      internalID: -3710027063091804623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_53
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 503
+        width: 11
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38af3e4a93eb6de80800000000000000
+      internalID: -8154120920518886781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_54
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 503
+        width: 11
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88034d928a70a180800000000000000
+      internalID: -9106143745140389750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_55
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 480
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccf02d8a96a80b30800000000000000
+      internalID: 4253833030774357191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_56
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 499
+        width: 39
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231b292bf1988cf20800000000000000
+      internalID: 3443152684357693746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_57
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 502
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6edb397c95332850800000000000000
+      internalID: 6350978845687668330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_58
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 502
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112bc79ebd9e02dd0800000000000000
+      internalID: -2512751461348363759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_59
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 502
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5348e7f15441820800000000000000
+      internalID: 2888009262620227022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_60
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 480
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd261c1c20d8b4f20800000000000000
+      internalID: 3407972586016039644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_61
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 501
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f2790edeaa3b8b0800000000000000
+      internalID: -5137574811247628524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_62
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 437
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fc45125a1bc4990800000000000000
+      internalID: -7400344764889641099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_63
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 380
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ca81c1a9cb976a0800000000000000
+      internalID: -6450917621149160402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_64
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 381
+        width: 44
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8ee4a147abbe030800000000000000
+      internalID: 3525116141167896750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 380
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e15bb9c990d29c30800000000000000
+      internalID: 4364780347808502249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_66
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 382
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee922f05cfb7d9480800000000000000
+      internalID: -8890813765739468306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_67
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 383
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a33226877024db0800000000000000
+      internalID: -4809273238454322562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_68
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 380
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f144fa1719696250800000000000000
+      internalID: 5938393131622089202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_69
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 381
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b18186c383864f70800000000000000
+      internalID: 9171162293180924343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_70
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 380
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf419a72572b6b5c0800000000000000
+      internalID: -4199973386230098692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_71
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 381
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a4d9ece3b4a8fa0800000000000000
+      internalID: -5797738837159622119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_72
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 380
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c807c7be1265160800000000000000
+      internalID: 7013830764964908119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_73
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 380
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966ad23f0e360d850800000000000000
+      internalID: 6399724888297154153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_74
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 382
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75723add694256a0800000000000000
+      internalID: -6462021779162237569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_75
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 380
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd03472714c9ed90800000000000000
+      internalID: -7067902536459285054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_76
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 379
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e28870cf2995b650800000000000000
+      internalID: 6248068488418067176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_77
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 256
+        width: 46
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e21b8c5c11679f0800000000000000
+      internalID: -471169569840353656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_78
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 258
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee769b4229d4d3e60800000000000000
+      internalID: 7943590607828117486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_79
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 258
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e3b4149a559bc20800000000000000
+      internalID: 3222701193793584758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_80
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 259
+        width: 41
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fb1378abab08d70800000000000000
+      internalID: 9043433362054823775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_81
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 236
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7761d6bd6fe36c0800000000000000
+      internalID: -4161617583355299920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_82
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 260
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1b352c1ee59d420800000000000000
+      internalID: 2655257779032535550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_83
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 258
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814cb6107f677e910800000000000000
+      internalID: 1866591373821199384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil_autism_weed_84
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 257
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d4579e79e641f50800000000000000
+      internalID: 6851222531873262908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      evil_autism_weed_0: 8111290265642401608
+      evil_autism_weed_1: 9093702049877132355
+      evil_autism_weed_10: 3694053166298743073
+      evil_autism_weed_11: -5023534704439234731
+      evil_autism_weed_12: 5209706194448897752
+      evil_autism_weed_13: 9122712849299460780
+      evil_autism_weed_14: 5850591969697743708
+      evil_autism_weed_15: 2419736765969710450
+      evil_autism_weed_16: -3241192323509911750
+      evil_autism_weed_17: 7563963669751930320
+      evil_autism_weed_18: 6909014929145849959
+      evil_autism_weed_19: -487458034469000256
+      evil_autism_weed_2: -5483947336876365986
+      evil_autism_weed_20: -3041633427978683917
+      evil_autism_weed_21: 7995412531560209248
+      evil_autism_weed_22: -8478775300299621299
+      evil_autism_weed_23: -1203854464310320671
+      evil_autism_weed_24: 3150360722805325077
+      evil_autism_weed_25: 472576019083594581
+      evil_autism_weed_26: 1478312671726108823
+      evil_autism_weed_27: -279667118429968387
+      evil_autism_weed_28: 576990422714071090
+      evil_autism_weed_29: 1046610157269021487
+      evil_autism_weed_3: 3675901409346296622
+      evil_autism_weed_30: 8615813437921724927
+      evil_autism_weed_31: -1320847700698123473
+      evil_autism_weed_32: -2323268493749567333
+      evil_autism_weed_33: 5803038641659743537
+      evil_autism_weed_34: -9092234194824299571
+      evil_autism_weed_35: 2708217192692300842
+      evil_autism_weed_36: 3861672973070154484
+      evil_autism_weed_37: -9219342690070843951
+      evil_autism_weed_38: 5564006775592980601
+      evil_autism_weed_39: -2399904096568415873
+      evil_autism_weed_4: 8760471550105800032
+      evil_autism_weed_40: 5599783663834207766
+      evil_autism_weed_41: -2673846138036165491
+      evil_autism_weed_42: -2712338719381280818
+      evil_autism_weed_43: -2793082144263600620
+      evil_autism_weed_44: -4795978039648179841
+      evil_autism_weed_45: -2871966004609304376
+      evil_autism_weed_46: -2444351795952662098
+      evil_autism_weed_47: 111895305136447300
+      evil_autism_weed_48: 9071365286885237675
+      evil_autism_weed_49: 2458991411814175599
+      evil_autism_weed_5: -3227417710485976518
+      evil_autism_weed_50: -9150871750776977067
+      evil_autism_weed_51: 8655114942785690247
+      evil_autism_weed_52: -3710027063091804623
+      evil_autism_weed_53: -8154120920518886781
+      evil_autism_weed_54: -9106143745140389750
+      evil_autism_weed_55: 4253833030774357191
+      evil_autism_weed_56: 3443152684357693746
+      evil_autism_weed_57: 6350978845687668330
+      evil_autism_weed_58: -2512751461348363759
+      evil_autism_weed_59: 2888009262620227022
+      evil_autism_weed_6: 2813582043338376417
+      evil_autism_weed_60: 3407972586016039644
+      evil_autism_weed_61: -5137574811247628524
+      evil_autism_weed_62: -7400344764889641099
+      evil_autism_weed_63: -6450917621149160402
+      evil_autism_weed_64: 3525116141167896750
+      evil_autism_weed_65: 4364780347808502249
+      evil_autism_weed_66: -8890813765739468306
+      evil_autism_weed_67: -4809273238454322562
+      evil_autism_weed_68: 5938393131622089202
+      evil_autism_weed_69: 9171162293180924343
+      evil_autism_weed_7: 7079153283287275863
+      evil_autism_weed_70: -4199973386230098692
+      evil_autism_weed_71: -5797738837159622119
+      evil_autism_weed_72: 7013830764964908119
+      evil_autism_weed_73: 6399724888297154153
+      evil_autism_weed_74: -6462021779162237569
+      evil_autism_weed_75: -7067902536459285054
+      evil_autism_weed_76: 6248068488418067176
+      evil_autism_weed_77: -471169569840353656
+      evil_autism_weed_78: 7943590607828117486
+      evil_autism_weed_79: 3222701193793584758
+      evil_autism_weed_8: -4543318996477188655
+      evil_autism_weed_80: 9043433362054823775
+      evil_autism_weed_81: -4161617583355299920
+      evil_autism_weed_82: 2655257779032535550
+      evil_autism_weed_83: 1866591373821199384
+      evil_autism_weed_84: 6851222531873262908
+      evil_autism_weed_9: 7378550880315958091
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
