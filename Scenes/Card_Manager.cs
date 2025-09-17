@@ -153,10 +153,16 @@ public class Card_Manager : MonoBehaviour
         Discard.Add(card);
         updatePlayerCardPositions();
 
-        //go to next turn if player
-        if (cardHolder == 0 )
+        //go to next turn if player/bot. also handle special
+        if (cardHolder != -1 )
         {
-            
+            if (card.GetComponent<Card_Script>().Ability == Card_Script.AbilityType.Draw2)
+            {
+                MoveToNextTurn();//Go to next turn, (we go again so its a skip!)
+                DrawNewCard(currentTurn);
+                DrawNewCard(currentTurn);
+            }
+
             MoveToNextTurn();
 
 
@@ -466,15 +472,16 @@ public class Card_Manager : MonoBehaviour
 
         CardData[] AllTheFuckingSpecialCards =
         {
-            new CardData("ME!!!",
-            "FUCK YOU. The next player draws 2 cards and skips their turn.",
-            loadSpr("Me"),
-            new Card_Script.TagType[] {Card_Script.TagType.Devious,Card_Script.TagType.Creature},
+
+            new CardData("Swarm of trained crow assassins",
+            "HOLY SHIT (next player draws 2 cards and skips next turn)",
+            loadSpr("crow_swarm"),
+            new Card_Script.TagType[] {Card_Script.TagType.Devious, Card_Script.TagType.Creature},
             Card_Script.AbilityType.Draw2),
 
             new CardData("Evil Autism Weed",
             "The next player draws 2 cards and skips their turn.",
-            loadSpr("evil_autism_weed"),
+            loadSpr("Evil_autism_weed"),
             new Card_Script.TagType[] {Card_Script.TagType.Devious,Card_Script.TagType.Plant},
             Card_Script.AbilityType.Draw2),
 
@@ -490,15 +497,54 @@ public class Card_Manager : MonoBehaviour
             new Card_Script.TagType[] {Card_Script.TagType.Devious,Card_Script.TagType.Object},
             Card_Script.AbilityType.Draw2),
 
+
+
+
+            new CardData("Santa",
+            "(next player draws 2 cards and skips next turn)",
+            loadSpr("Santa"),
+            new Card_Script.TagType[] {Card_Script.TagType.Jolly, Card_Script.TagType.Person},
+            Card_Script.AbilityType.Draw2),
+
+            new CardData("ME!!!",
+            "FUCK YOU. The next player draws 2 cards and skips their turn.",
+            loadSpr("Me"),
+            new Card_Script.TagType[] {Card_Script.TagType.Jolly,Card_Script.TagType.Creature},
+            Card_Script.AbilityType.Draw2),
+
+            new CardData("Giving Tree",
+            "Kindness is free, sprinkle that stuff everywhere! (next player draws 2 and skips turn).",
+            loadSpr("givingTree"),
+            new Card_Script.TagType[] {Card_Script.TagType.Jolly,Card_Script.TagType.Plant},
+            Card_Script.AbilityType.Draw2),
+
+            new CardData("Santa hat",
+            "STOP LOOKING AT THE CAT. THIS CARD IS ABOUT THE HAT. NOT THE CAT. IGNORE THE CAT. (next player draws 2 and skips turn).",
+            loadSpr("santa_hat"),
+            new Card_Script.TagType[] {Card_Script.TagType.Jolly,Card_Script.TagType.Object},
+            Card_Script.AbilityType.Draw2),
+
+
         };
         GameObject newCard;
-        for (int i = 0; i < 36; i++)
+        for (int i = 0; i < AllTheFuckingCards.Length; i++)
         {
             newCard = Instantiate(CardPrefab);
             Card_Script newCardScript = newCard.GetComponent<Card_Script>();
             newCardScript.manager = this;
             newCardScript.setIsFaceDown(true);
             newCardScript.copyFromCardData(AllTheFuckingCards[i]);
+            newCardScript.cardIndex = i;
+            Deck.Add(newCard);
+
+        }
+        for (int i = 0; i < AllTheFuckingSpecialCards.Length; i++)
+        {
+            newCard = Instantiate(CardPrefab);
+            Card_Script newCardScript = newCard.GetComponent<Card_Script>();
+            newCardScript.manager = this;
+            newCardScript.setIsFaceDown(true);
+            newCardScript.copyFromCardData(AllTheFuckingSpecialCards[i]);
             newCardScript.cardIndex = i;
             Deck.Add(newCard);
 
@@ -656,9 +702,6 @@ public class Card_Manager : MonoBehaviour
             if (currentCardScript.CanBePlayed())
             {
                 PlayCard(DeckToUse[i], botIndex);
-                
-                
-                MoveToNextTurn();
                 return;
             }
         }

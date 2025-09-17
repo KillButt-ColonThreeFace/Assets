@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 04e43cda30200fa4a91d7d038cf88887
+guid: 69c67486b4c9476489b41750ce9aa465
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8111290265642401608
-    second: evil_autism_weed_0
+      213: -65051867957974237
+    second: santa_hat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: evil_autism_weed_0
+      name: santa_hat_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1082
-        height: 1002
+        width: 1084
+        height: 1006
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84ff2b96587119070800000000000000
-      internalID: 8111290265642401608
+      spriteID: 32ba366bba3e81ff0800000000000000
+      internalID: -65051867957974237
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      evil_autism_weed_0: 8111290265642401608
+      santa_hat_0: -65051867957974237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

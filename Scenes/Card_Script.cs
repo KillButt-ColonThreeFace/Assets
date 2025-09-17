@@ -12,7 +12,7 @@ public class Card_Script : MonoBehaviour
         Plant, Creature, Person, Object,//"main" tags
         Gross, Real, Cute, Spooky, Sneaky, Digital, Cool, Melancholic, Magical, Evil, Bald,//"seconday" tags
 
-        Devious//"flavor" tags (used as 1-offs for some special cards)
+        Devious,Jolly//"special" tags (used as 1-offs for some special cards)
     }
     //enum for the abilities
     public enum AbilityType
@@ -22,7 +22,9 @@ public class Card_Script : MonoBehaviour
     //list of the tag names (used for auto-generating the tag text)
     private static string[] TagNames = new string[] {
         "Plant", "Creature", "Person", "Object",
-        "Gross", "Real", "Cute", "Spooky", "Sneaky", "Digital", "Cool", "Melancholic", "Magical", "Evil","Bald"
+        "Gross", "Real", "Cute", "Spooky", "Sneaky", "Digital", "Cool", "Melancholic", "Magical", "Evil","Bald",
+
+        "Devious","Jolly!"
     };
     public Card_Manager manager;//reference to card manager object
     public TagType[] Tags;//what tags the card has
@@ -39,6 +41,7 @@ public class Card_Script : MonoBehaviour
     public bool IsPlayerCard = false;//if the card can be clicked on and played when its the player turn
     public bool IsFaceDown = true;//is the card face down
     public bool followingCursor;//used by mouse control
+    public AbilityType Ability = AbilityType.None;
     void Start()
     {
 
@@ -90,6 +93,7 @@ public class Card_Script : MonoBehaviour
         spr.sprite = cardData.CardImage;
         
         Tags = cardData.Tags;
+        Ability = cardData.AbilityIndex;
         updateTagsText();
     }
     //adds tags, auto updates text.
