@@ -692,7 +692,7 @@ public class Card_Manager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Something went wrong with bot turns bozo, input should only be 1-3. u gave me somefin else!! WHAT DO I DOOOOOOO");
+            //Debug.Log("Something went wrong with bot turns bozo, input should only be 1-3. u gave me somefin else!! WHAT DO I DOOOOOOO");
             return;
         }
         Card_Script currentCardScript;

@@ -1,9 +1,11 @@
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
+//using Unity.VisualScripting;
+//using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
+//using UnityEngine.EventSystems;
+//using UnityEngine.UI;
 public class Card_Script : MonoBehaviour
 {
     //enum for the tag types
@@ -27,7 +29,7 @@ public class Card_Script : MonoBehaviour
         "Devious","Jolly!"
     };
     public Card_Manager manager;//reference to card manager object
-    public TagType[] Tags;//what tags the card has
+    public List<TagType> Tags;//what tags the card has
     public GameObject TagText;//ref to the tag text object
     public GameObject DescriptionText;//ref to the desctiption text object
     public GameObject NameText;//ref to the name text object
@@ -91,28 +93,32 @@ public class Card_Script : MonoBehaviour
 
         SpriteRenderer spr = Image_Rect.GetComponent<SpriteRenderer>();
         spr.sprite = cardData.CardImage;
-        
-        Tags = cardData.Tags;
+
+        Tags.Clear();
+        for (int i = 0; i < cardData.Tags.Length; i++)
+        {
+            Tags.Add(cardData.Tags[i]);
+        }
         Ability = cardData.AbilityIndex;
         updateTagsText();
     }
     //adds tags, auto updates text.
     public void addTag(TagType tagToAdd)
     {
-        for (int i = 0; i < Tags.Length; i++)
+        for (int i = 0; i < Tags.Count; i++)
         {
             if (Tags[i] == tagToAdd)
             {
                 return;
             }
         }
-        ArrayUtility.Add(ref Tags, tagToAdd);
+        Tags.Add(tagToAdd);
         updateTagsText();
     }
     //clears all card tags, auto updates text
     public void clearTags()
     {
-        ArrayUtility.Clear(ref Tags);
+        Tags.Clear();
         
         TextMeshPro txt = TagText.GetComponent<TextMeshPro>();
         string newText = "";
@@ -124,19 +130,19 @@ public class Card_Script : MonoBehaviour
         TextMeshPro txt = TagText.GetComponent<TextMeshPro>();
         string newText = "";
         newText = TagNames[(int)Tags[0]];
-        for (int i=1; i < Tags.Length;i++)
+        for (int i=1; i < Tags.Count;i++)
         {
             newText = newText + " " + TagNames[(int)Tags[i]];
         }
         txt.text = newText;
     }
     //returns if a card shares a tag
-    public bool CheckIfSharesTag(TagType[] OtherCardTags)
+    public bool CheckIfSharesTag(List<TagType> OtherCardTags)
     {
 
-        for (int i = 0; i < Tags.Length;i++)
+        for (int i = 0; i < Tags.Count;i++)
         {
-            for (int j = 0; j < OtherCardTags.Length;j++)
+            for (int j = 0; j < OtherCardTags.Count;j++)
             {
                 if (Tags[i] == OtherCardTags[j])
                 {
