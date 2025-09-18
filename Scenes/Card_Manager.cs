@@ -1,4 +1,4 @@
-using NUnit.Framework.Internal;
+//using NUnit.Framework.Internal;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -26,7 +26,7 @@ public class Card_Manager : MonoBehaviour
     public int currentTurn;
     public int turnDirection;
     public bool mouseControl;
-    public Randomizer Rand = new Randomizer();
+    //public Randomizer Rand = new Randomizer();
     public GameObject CardPrefab;
     //class to store card data.
     public class CardData
@@ -176,7 +176,7 @@ public class Card_Manager : MonoBehaviour
         for (int i = 0; i < Deck.Count; i++)
         {
             card1 = Deck[i];
-            randCardIndex = Rand.Next(0, Deck.Count - 1);
+            randCardIndex = Random.Range(0, Deck.Count - 1);
             card2 = Deck[randCardIndex];
 
             Deck[i] = card2;
