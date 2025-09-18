@@ -194,10 +194,20 @@ public class Card_Script : MonoBehaviour
             if ((Input.mousePosition.x < topCor.x && Input.mousePosition.x > botCor.x) && (Input.mousePosition.y < topCor.y && Input.mousePosition.y > botCor.y))
             {
                 offsetPosition = new Vector3(0, .3f, 0);
+                //shitty card balatro ratation thing. fucking bad cuz im dum tho T_T
+                //Quaternion q = new Quaternion();
+                //float dy = (topCor.y+offsetPosition.y-.5f) - Input.mousePosition.y;
+                //float dx = (topCor.x) - Input.mousePosition.x;
+                //q.eulerAngles = new Vector3(
+                //    (5-(dy/65)*10)*3,
+                //    (5-(dx/65)*10)*3
+                //    ,0);
+                //transform.rotation = q;
                 if (Input.GetMouseButtonDown(0))
                 {
                     if (manager.GetComponent<Card_Manager>().mouseControl)
                     {
+                        SetSortingLayer(100);
                         followingCursor = true;
                     } else
                     {
@@ -223,6 +233,7 @@ public class Card_Script : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 followingCursor = false;
+                manager.GetComponent<Card_Manager>().updatePlayerCardPositions();
                 if (IsPlayerCard)
                 {
                     if (mousePos.x > -1.1f && mousePos.x < 1.1f)
@@ -234,6 +245,7 @@ public class Card_Script : MonoBehaviour
                     }
                 } else
                 {
+                    SetSortingLayer(99);
                     if (mousePos.y < -2.8) {
                         Card_Manager.TurnType turn = manager.GetComponent<Card_Manager>().CurrentTurnType;
                         Card_Manager cardManager = manager.GetComponent<Card_Manager>();
@@ -255,6 +267,7 @@ public class Card_Script : MonoBehaviour
         }
         else
         {
+
             transform.position = new Vector3(
             transform.position.x - (transform.position.x - (targetPosition.x + offsetPosition.x)) * .03f,
             transform.position.y - (transform.position.y - (targetPosition.y + offsetPosition.y)) * .03f,

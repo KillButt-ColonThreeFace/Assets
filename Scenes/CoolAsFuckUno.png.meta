@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: 5ddda8f4a1903d54f8f46473cf231293
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8804137354573316480
+    second: CoolAsFuckUno_0
+  - first:
+      213: 3099258867179767278
+    second: CoolAsFuckUno_1
+  - first:
+      213: 6378728909607709271
+    second: CoolAsFuckUno_2
+  - first:
+      213: 7296972028392184348
+    second: CoolAsFuckUno_3
+  - first:
+      213: 576305506926185302
+    second: CoolAsFuckUno_4
+  - first:
+      213: 934009625511459862
+    second: CoolAsFuckUno_5
+  - first:
+      213: 4714748751089337456
+    second: CoolAsFuckUno_6
+  - first:
+      213: -6886973008558825882
+    second: CoolAsFuckUno_7
+  - first:
+      213: 1669264262371911055
+    second: CoolAsFuckUno_8
+  - first:
+      213: 1257933641469395923
+    second: CoolAsFuckUno_9
+  - first:
+      213: -5829234240986346094
+    second: CoolAsFuckUno_10
+  - first:
+      213: -4895143185355470804
+    second: CoolAsFuckUno_11
+  - first:
+      213: 3192786508522066625
+    second: CoolAsFuckUno_12
+  - first:
+      213: -3802720315046729970
+    second: CoolAsFuckUno_13
+  - first:
+      213: -7982422659747765645
+    second: CoolAsFuckUno_14
+  - first:
+      213: 5516771737567500517
+    second: CoolAsFuckUno_15
+  - first:
+      213: 6402123729777080270
+    second: CoolAsFuckUno_16
+  - first:
+      213: -5461072364450276849
+    second: CoolAsFuckUno_17
+  - first:
+      213: -2283897440864930122
+    second: CoolAsFuckUno_18
+  - first:
+      213: 457760984030354664
+    second: CoolAsFuckUno_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CoolAsFuckUno_0
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 325
+        width: 120
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081071517449e2a70800000000000000
+      internalID: 8804137354573316480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_1
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 342
+        width: 38
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5ca35e487c20b20800000000000000
+      internalID: 3099258867179767278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_2
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 364
+        width: 131
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75aaea7b52cc58850800000000000000
+      internalID: 6378728909607709271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_3
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 380
+        width: 117
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a1748166d044560800000000000000
+      internalID: 7296972028392184348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_4
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 395
+        width: 116
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bcf6e1ec27ff700800000000000000
+      internalID: 576305506926185302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_5
+      rect:
+        serializedVersion: 2
+        x: 2673
+        y: 428
+        width: 119
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cf7694ec446fc00800000000000000
+      internalID: 934009625511459862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_6
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 447
+        width: 119
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07485e162072e6140800000000000000
+      internalID: 4714748751089337456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_7
+      rect:
+        serializedVersion: 2
+        x: 2938
+        y: 463
+        width: 125
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ed527998e8c60a0800000000000000
+      internalID: -6886973008558825882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_8
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 207
+        width: 116
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85aee2a00b6a2710800000000000000
+      internalID: 1669264262371911055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_9
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 404
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d30cca6bf3157110800000000000000
+      internalID: 1257933641469395923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_10
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 244
+        width: 115
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d0779a7566a1fa0800000000000000
+      internalID: -5829234240986346094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_11
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 259
+        width: 116
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2886306535f01cb0800000000000000
+      internalID: -4895143185355470804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_12
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 289
+        width: 119
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c21e14d96e0f4c20800000000000000
+      internalID: 3192786508522066625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_13
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 307
+        width: 121
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e076a7965060a3bc0800000000000000
+      internalID: -3802720315046729970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_14
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 101
+        width: 163
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372a4b632ecb83190800000000000000
+      internalID: -7982422659747765645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_15
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 118
+        width: 121
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e810ac8aa28f8c40800000000000000
+      internalID: 5516771737567500517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_16
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 139
+        width: 120
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec73671cc99e8d850800000000000000
+      internalID: 6402123729777080270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_17
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 168
+        width: 133
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a1d385e9f5634b0800000000000000
+      internalID: -5461072364450276849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_18
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 189
+        width: 119
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b672ddc067fd40e0800000000000000
+      internalID: -2283897440864930122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_19
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 238
+        width: 38
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec992d803b4a5600800000000000000
+      internalID: 457760984030354664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoolAsFuckUno_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 102
+        width: 2741
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdf3cd458a593d4b85fcf31f522092b
+      internalID: -836936903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: afc87835fb1157c4f88505013f236f14
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CoolAsFuckUno_0: 8804137354573316480
+      CoolAsFuckUno_1: 3099258867179767278
+      CoolAsFuckUno_10: -5829234240986346094
+      CoolAsFuckUno_11: -4895143185355470804
+      CoolAsFuckUno_12: 3192786508522066625
+      CoolAsFuckUno_13: -3802720315046729970
+      CoolAsFuckUno_14: -7982422659747765645
+      CoolAsFuckUno_15: 5516771737567500517
+      CoolAsFuckUno_16: 6402123729777080270
+      CoolAsFuckUno_17: -5461072364450276849
+      CoolAsFuckUno_18: -2283897440864930122
+      CoolAsFuckUno_19: 457760984030354664
+      CoolAsFuckUno_2: 6378728909607709271
+      CoolAsFuckUno_20: -836936903
+      CoolAsFuckUno_3: 7296972028392184348
+      CoolAsFuckUno_4: 576305506926185302
+      CoolAsFuckUno_5: 934009625511459862
+      CoolAsFuckUno_6: 4714748751089337456
+      CoolAsFuckUno_7: -6886973008558825882
+      CoolAsFuckUno_8: 1669264262371911055
+      CoolAsFuckUno_9: 1257933641469395923
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

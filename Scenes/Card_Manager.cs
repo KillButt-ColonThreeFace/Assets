@@ -10,9 +10,9 @@ using UnityEngine.SocialPlatforms;
 
 public class Card_Manager : MonoBehaviour
 {
+    public GameObject GameManager;
     public List<GameObject> Deck;
     public List<GameObject> Discard;
-
     public GameObject LastPlayedCard;//the top card in dicard
     //player cards
     public List<GameObject> PlayerCards;
@@ -57,10 +57,10 @@ public class Card_Manager : MonoBehaviour
     //creates deck and gives starting cards
     void Start()
     {
-
         InitDeck();
-        StartNewGame();
+        //StartNewGame();
     }
+
     public void updatePlayerCardPositions()
     {
         GameObject playerCard;
@@ -664,6 +664,7 @@ public class Card_Manager : MonoBehaviour
                     if (mouseControl)
                     {
                         Card_Script drawCard = GetTopCard().GetComponent<Card_Script>();
+                        drawCard.SetSortingLayer(100);
                         drawCard.followingCursor = true;
                     } else
                     {
