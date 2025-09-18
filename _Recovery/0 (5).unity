@@ -170,6 +170,8 @@ MonoBehaviour:
   Bot1Cards: []
   Bot2Cards: []
   Bot3Cards: []
+  drawAmount: 0
+  CurrentTurnType: 0
   drawCardText: {fileID: 522433134}
   botDelayTimer: 0
   PlayerCount: 2

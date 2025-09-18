@@ -157,11 +157,23 @@ public class Card_Script : MonoBehaviour
     {
         if (manager.GetComponent<Card_Manager>().LastPlayedCard != null)
         {
+            Card_Manager.TurnType currentTurnType = manager.GetComponent<Card_Manager>().CurrentTurnType;
             Card_Script lastCardScript = manager.GetComponent<Card_Manager>().LastPlayedCard.GetComponent<Card_Script>();
 
             if (CheckIfSharesTag(lastCardScript.Tags))
             {
-                return true;
+                if (currentTurnType == Card_Manager.TurnType.Normal)
+                {
+                    return true;
+                } 
+                else if (currentTurnType == Card_Manager.TurnType.Draw2)
+                {
+                    if (Ability == AbilityType.Draw2)
+                    {
+                        return true;
+                    }
+                }
+                
             }
 
         }
@@ -222,9 +234,20 @@ public class Card_Script : MonoBehaviour
                     }
                 } else
                 {
-                    if (mousePos.y < .01) {
-                        manager.GetComponent<Card_Manager>().DrawNewCard(0);
-                        manager.GetComponent<Card_Manager>().MoveToNextTurn();
+                    if (mousePos.y < -2.8) {
+                        Card_Manager.TurnType turn = manager.GetComponent<Card_Manager>().CurrentTurnType;
+                        Card_Manager cardManager = manager.GetComponent<Card_Manager>();
+                        if (turn == Card_Manager.TurnType.Normal)
+                        {
+                            cardManager.DrawNewCard(0);
+                        } else if  (turn == Card_Manager.TurnType.Draw2)
+                        {
+                            for (int i = 0; i < cardManager.drawAmount; i++)
+                            {
+                                cardManager.DrawNewCard(0);
+                            }
+                        }
+                        manager.GetComponent<Card_Manager>().MoveToNextTurn(Card_Manager.TurnType.Normal);
                     }
                 }
                 

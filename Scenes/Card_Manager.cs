@@ -19,7 +19,12 @@ public class Card_Manager : MonoBehaviour
     public List<GameObject> Bot1Cards;
     public List<GameObject> Bot2Cards;
     public List<GameObject> Bot3Cards;
-
+    public enum TurnType
+    {
+        Normal, Draw2, Draw4, Skipped
+    }
+    public int drawAmount;//used to keep track of stacked +2's
+    public TurnType CurrentTurnType;
     public GameObject drawCardText;//text that says "< Draw Card" when hovering over the deck on ur turn
     public float botDelayTimer;
     public int PlayerCount;//max # of players. 2 is good. 4 is rlly cramped lmao..
@@ -158,12 +163,13 @@ public class Card_Manager : MonoBehaviour
         {
             if (card.GetComponent<Card_Script>().Ability == Card_Script.AbilityType.Draw2)
             {
-                MoveToNextTurn();//Go to next turn, (we go again so its a skip!)
-                DrawNewCard(currentTurn);
-                DrawNewCard(currentTurn);
+                MoveToNextTurn(TurnType.Draw2);
+            }else
+            {
+                MoveToNextTurn(TurnType.Normal);
             }
 
-            MoveToNextTurn();
+                
 
 
         }
@@ -649,6 +655,10 @@ public class Card_Manager : MonoBehaviour
             if ((Input.mousePosition.x < topCor.x && Input.mousePosition.x > botCor.x) && (Input.mousePosition.y < topCor.y && Input.mousePosition.y > botCor.y))
             {
                 txt.text = "< Draw a Card";
+                if (CurrentTurnType == TurnType.Draw2)
+                {
+                    txt.text = "< Draw " + drawAmount + " Cards";
+                }
                 if (Input.GetMouseButtonDown(0))
                 {
                     if (mouseControl)
@@ -657,8 +667,19 @@ public class Card_Manager : MonoBehaviour
                         drawCard.followingCursor = true;
                     } else
                     {
-                        DrawNewCard(0);
-                        MoveToNextTurn();
+                        if (CurrentTurnType == TurnType.Draw2)
+                        {
+                            for (int i=0; i<drawAmount;i++)
+                            {
+                                DrawNewCard(0);
+                            }
+                            MoveToNextTurn(TurnType.Normal);
+                        } else
+                        {
+                            DrawNewCard(0);
+                            MoveToNextTurn(TurnType.Normal);
+                        }
+                            
                     }
                         
 
@@ -705,14 +726,33 @@ public class Card_Manager : MonoBehaviour
                 return;
             }
         }
-        DrawNewCard(botIndex);
-        MoveToNextTurn();
+        if (CurrentTurnType == TurnType.Normal)
+        {
+            DrawNewCard(botIndex);
+        } else if (CurrentTurnType == TurnType.Draw2)
+        {
+            for (int i = 0; i < drawAmount; i++)
+            {
+                DrawNewCard(botIndex);
+            }
+        }
+            MoveToNextTurn(TurnType.Normal);
 
     }
     //moves to next turn. currently ignores direction. add support for that if we add swap cards
-    public void MoveToNextTurn()
+    public void MoveToNextTurn(TurnType nextTurnType)
     {
         botDelayTimer = 0;
+        if (nextTurnType == TurnType.Normal)
+        {
+            drawAmount = 0;//reset stacked +2's
+        }
+        if (nextTurnType == TurnType.Draw2)
+        {
+            drawAmount += 2;//add 2 to amount of card 2 draw 
+        }
+
+        CurrentTurnType = nextTurnType;
         currentTurn = (currentTurn + 1) % PlayerCount;
     }
 }
