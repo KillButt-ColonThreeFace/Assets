@@ -1,6 +1,7 @@
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game_Manager : MonoBehaviour
 {
@@ -159,8 +160,8 @@ public class Game_Manager : MonoBehaviour
         {
             if (ActiveRects[0].performAction)
             {
-                StartGame();
-                SetGameState(GameState.PlayingGame);
+                SceneManager.LoadScene("Scenes/Gameplay");
+                //SetGameState(GameState.PlayingGame);
 
             }
             else if (ActiveRects[1].performAction)

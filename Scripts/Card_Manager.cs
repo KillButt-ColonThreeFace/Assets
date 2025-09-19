@@ -58,7 +58,7 @@ public class Card_Manager : MonoBehaviour
     void Start()
     {
         InitDeck();
-        //StartNewGame();
+        StartNewGame();
     }
 
 
