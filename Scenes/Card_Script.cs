@@ -247,19 +247,7 @@ public class Card_Script : MonoBehaviour
                 {
                     SetSortingLayer(99);
                     if (mousePos.y < -2.8) {
-                        Card_Manager.TurnType turn = manager.GetComponent<Card_Manager>().CurrentTurnType;
-                        Card_Manager cardManager = manager.GetComponent<Card_Manager>();
-                        if (turn == Card_Manager.TurnType.Normal)
-                        {
-                            cardManager.DrawNewCard(0);
-                        } else if  (turn == Card_Manager.TurnType.Draw2)
-                        {
-                            for (int i = 0; i < cardManager.drawAmount; i++)
-                            {
-                                cardManager.DrawNewCard(0);
-                            }
-                        }
-                        manager.GetComponent<Card_Manager>().MoveToNextTurn(Card_Manager.TurnType.Normal);
+                        manager.GetComponent<Card_Manager>().PlayerDrawCards(0, manager.GetComponent<Card_Manager>().GetTopCard());
                     }
                 }
                 

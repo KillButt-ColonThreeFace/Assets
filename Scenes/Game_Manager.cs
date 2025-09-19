@@ -11,14 +11,21 @@ public class Game_Manager : MonoBehaviour
         PlayingGame,
         PostGame,
     }
-    public GameObject[] MainMenuObjects;
+    public GameObject MainMenuObjects;
+    public GameObject SettingsObjects;
+    public Sprite[] Backgrounds;
+    public int BackgroundIndex = 0;
     public MouseRect[] MainMenuRects;
+    public MouseRect[] SettingsRects;
     public MouseRect[] ActiveRects;
     public GameObject Background;
     public float BackgroundTick;
     public GameObject CardManager;
     public GameState State;
-
+    private Sprite loadSpr(string name)//makes defining cards quicker
+    {
+        return Resources.Load<Sprite>("Backgrounds/" + name);
+    }
     public class MouseRect
     {
         public float x;
@@ -56,6 +63,8 @@ public class Game_Manager : MonoBehaviour
             }
             Vector3 pos = Camera.main.WorldToScreenPoint(new Vector3(x-width/2,y-height/2,0));
             Vector3 pos2 = Camera.main.WorldToScreenPoint(new Vector3(x + width / 2, y + height / 2, 0));
+             Debug.DrawLine(pos, pos2,Color.red,4f,false);
+            Debug.DrawLine(new Vector3(x - width / 2, y - height / 2, 0), new Vector3(x + width / 2, y + height / 2, 0), Color.red, 4f, false);
             if (Input.mousePosition.x < pos2.x && Input.mousePosition.x > pos.x)
             {
                 if (Input.mousePosition.y < pos2.y && Input.mousePosition.y > pos.y)
@@ -83,31 +92,50 @@ public class Game_Manager : MonoBehaviour
     {
 
         MainMenuRects = new MouseRect[] {
-            new MouseRect(-5.9f, 0.7f, 20f, 10f)
+            new MouseRect(0, -1.89f, 2.5f, 1.5f),
+            new MouseRect(0, -3.89f, 5f, 1.5f)
         };
+        SettingsRects = new MouseRect[] {
+            new MouseRect(-7.6f,-4.89f,2.5f,1.5f),
+            new MouseRect(3.16f,-0.26f,4.5f,1.5f),
+        };
+        Backgrounds = new Sprite[]
+        {
+            loadSpr("Stars"),
+            loadSpr("poot"),
+            loadSpr("gomi"),
+            loadSpr("Dexter"),
+            loadSpr("Rainbow_Bowser"),
+            loadSpr("moxie"),
+            loadSpr("garlic"),
+            loadSpr("Dumb_Ways_to_Die"),
+            loadSpr("cyber"),
+
+        };
+
         Background.GetComponent<SpriteRenderer>().sortingOrder = 800;
         SetGameState(GameState.MainMenu);
     }
-    void putAllObjectsInTheBack()
+    void removeAllMenus()
     {
         Background.GetComponent<SpriteRenderer>().sortingOrder = -9999;
-        for (int i = 0; i < MainMenuObjects.Length; i++)
-        {
-            MainMenuObjects[i].GetComponent<SpriteRenderer>().sortingOrder = -10000;
-        }
+        MainMenuObjects.transform.position = new Vector3(1000,1000,0);
+        SettingsObjects.transform.position = new Vector3(1000, 1000, 0);
     }
     void SetGameState(GameState state)
     {
-        putAllObjectsInTheBack();
+        removeAllMenus();
         ActiveRects = new MouseRect[] { };
         if (state == GameState.MainMenu)
         {
             ActiveRects = MainMenuRects;
             Background.GetComponent<SpriteRenderer>().sortingOrder = 800;
-            for (int i = 0; i < MainMenuObjects.Length; i++)
-            {
-                MainMenuObjects[i].GetComponent<SpriteRenderer>().sortingOrder = 1000;
-            }
+            MainMenuObjects.transform.position = new Vector3(0, 0, 0);
+        } else if (state == GameState.Settings)
+        {
+            Background.GetComponent<SpriteRenderer>().sortingOrder = 800;
+            ActiveRects = SettingsRects;
+            SettingsObjects.transform.position = new Vector3(0, 0, 0);
         }
         State = state;
     }
@@ -119,10 +147,13 @@ public class Game_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0;i < ActiveRects.Length;i++)
-        {
-            ActiveRects[i].UpdateRect(); 
+        if (ActiveRects.Length > 0) {
+            for (int i = 0; i < ActiveRects.Length; i++)
+            {
+                ActiveRects[i].UpdateRect();
+            }
         }
+
         //Debug.Log(ActiveRects[0]);
         if (State == GameState.MainMenu)
         {
@@ -132,9 +163,31 @@ public class Game_Manager : MonoBehaviour
                 SetGameState(GameState.PlayingGame);
 
             }
+            else if (ActiveRects[1].performAction)
+            {
+                SetGameState(GameState.Settings);
+            }
+
+        }
+        else if (State == GameState.Settings) {
+            if (ActiveRects[0].performAction)
+            {
+                SetGameState(GameState.MainMenu);
+            }
+            else if (ActiveRects[1].performAction)
+            {
+                BackgroundIndex = (BackgroundIndex + 1) % Backgrounds.Length;
+                Background.GetComponent<SpriteRenderer>().sprite = Backgrounds[BackgroundIndex];
+            }
+
+
+        
+        
         }
 
-        BackgroundTick += Time.deltaTime;
+
+
+            BackgroundTick += Time.deltaTime;
         Background.transform.position = new Vector3(BackgroundTick % 1.28f, (Mathf.Sin(BackgroundTick) + BackgroundTick / 2) % 1.28f, 0);
 
         //Vector3 topCor = Camera.main.WorldToScreenPoint(new Vector3(targetPosition.x + 0.6f, targetPosition.y + 1.15f, 0.0f));

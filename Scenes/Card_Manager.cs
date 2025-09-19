@@ -61,7 +61,8 @@ public class Card_Manager : MonoBehaviour
         //StartNewGame();
     }
 
-    public void updatePlayerCardPositions()
+
+    public void updatePlayerCardPositions()//updates all card target positions, also sets their layers to be based on hand index
     {
         GameObject playerCard;
         for (int i = 0; i < PlayerCards.Count; i++)
@@ -533,6 +534,7 @@ public class Card_Manager : MonoBehaviour
 
         };
         GameObject newCard;
+        //create all the normal cards
         for (int i = 0; i < AllTheFuckingCards.Length; i++)
         {
             newCard = Instantiate(CardPrefab);
@@ -544,6 +546,7 @@ public class Card_Manager : MonoBehaviour
             Deck.Add(newCard);
 
         }
+        //create all the special cards
         for (int i = 0; i < AllTheFuckingSpecialCards.Length; i++)
         {
             newCard = Instantiate(CardPrefab);
@@ -641,7 +644,39 @@ public class Card_Manager : MonoBehaviour
         PlayCard(GetTopCard(),-1);
         RemoveTopCard();
     }
+    public void PlayerDrawCards(int player)//called when drawing cards via deck. its a function cuz mouse controls and non-mouse controls draw cards diffrently
+    {
+        if (CurrentTurnType == TurnType.Draw2)
+        {
+            for (int i = 0; i < drawAmount; i++)
+            {
+                DrawNewCard(player);
+            }
+            MoveToNextTurn(TurnType.Normal);
+        }
+        else
+        {
+            DrawNewCard(player);
+            MoveToNextTurn(TurnType.Normal);
+        }
+    }
 
+    public void PlayerDrawCards(int player,GameObject card)//same as above, but used by mouse controls to make all the cards come from the one u dragged
+    {
+        if (CurrentTurnType == TurnType.Draw2)
+        {
+            for (int i = 0; i < drawAmount; i++)
+            {
+                DrawNewCard(player).transform.position = card.transform.position;
+            }
+            MoveToNextTurn(TurnType.Normal);
+        }
+        else
+        {
+            DrawNewCard(player);
+            MoveToNextTurn(TurnType.Normal);
+        }
+    }
     //handles if the player draws a card. Also does bot turns
     void Update()
     {
@@ -666,21 +701,10 @@ public class Card_Manager : MonoBehaviour
                         Card_Script drawCard = GetTopCard().GetComponent<Card_Script>();
                         drawCard.SetSortingLayer(100);
                         drawCard.followingCursor = true;
-                    } else
+                    } 
+                    else
                     {
-                        if (CurrentTurnType == TurnType.Draw2)
-                        {
-                            for (int i=0; i<drawAmount;i++)
-                            {
-                                DrawNewCard(0);
-                            }
-                            MoveToNextTurn(TurnType.Normal);
-                        } else
-                        {
-                            DrawNewCard(0);
-                            MoveToNextTurn(TurnType.Normal);
-                        }
-                            
+                        PlayerDrawCards(0);
                     }
                         
 
@@ -727,17 +751,7 @@ public class Card_Manager : MonoBehaviour
                 return;
             }
         }
-        if (CurrentTurnType == TurnType.Normal)
-        {
-            DrawNewCard(botIndex);
-        } else if (CurrentTurnType == TurnType.Draw2)
-        {
-            for (int i = 0; i < drawAmount; i++)
-            {
-                DrawNewCard(botIndex);
-            }
-        }
-            MoveToNextTurn(TurnType.Normal);
+        PlayerDrawCards(botIndex);
 
     }
     //moves to next turn. currently ignores direction. add support for that if we add swap cards
