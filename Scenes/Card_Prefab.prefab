@@ -289,24 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca158ea5565723e4c8721de5dbfa2ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card_Script
-  TagNames:
-  - Plant
-  - Creature
-  - Person
-  - Object
-  - Gross
-  - Real
-  - Cute
-  - Spooky
-  - Sneaky
-  - Digital
-  - Cool
-  - Melancholic
-  - Magical
-  - Evil
-  - Bald
   manager: {fileID: 0}
-  cam: {fileID: 0}
   Tags: 
   TagText: {fileID: 1517641765331251057}
   DescriptionText: {fileID: 1960575372152411911}
@@ -315,10 +298,13 @@ MonoBehaviour:
   TagDivider: {fileID: 2001911639336920920}
   Overlay: {fileID: 2597936091089440844}
   CardBack: {fileID: 4975649485367310721}
+  cardIndex: 0
   targetPosition: {x: 666, y: 666, z: 666}
   offsetPosition: {x: 0, y: 0, z: 0}
   IsPlayerCard: 0
   IsFaceDown: 1
+  followingCursor: 0
+  Ability: 0
 --- !u!1 &1517641765331251057
 GameObject:
   m_ObjectHideFlags: 0
