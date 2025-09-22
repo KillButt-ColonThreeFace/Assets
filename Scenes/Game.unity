@@ -178,7 +178,7 @@ MonoBehaviour:
   PlayerCount: 2
   currentTurn: 0
   turnDirection: 0
-  mouseControl: 0
+  mouseControl: 1
   CardPrefab: {fileID: 966905130390011684, guid: a76e7b5b2d16ec84cb8b3b1a5e1b711d, type: 3}
 --- !u!1 &519420028
 GameObject:
