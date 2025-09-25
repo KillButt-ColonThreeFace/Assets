@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using TMPro;
 //using Unity.VisualScripting;
 //using UnityEditor;
@@ -8,25 +9,29 @@ using UnityEngine;
 //using UnityEngine.UI;
 public class Card_Script : MonoBehaviour
 {
+    public AlmanacScript almanac;
+    public bool Alm = false;
     //enum for the tag types
     public enum TagType
     {
         Plant, Creature, Person, Object,//"main" tags
         Gross, Real, Cute, Spooky, Sneaky, Digital, Cool, Melancholic, Magical, Evil, Bald,//"seconday" tags
 
-        Devious,Jolly//"special" tags (used as 1-offs for some special cards)
+        Devious, Jolly,//"special" tags (used as 1-offs for some special cards)
+
+        Wild,
     }
     //enum for the abilities
     public enum AbilityType
     {
-        None,Skip, KillTheOtherPlayer,Draw2,Draw4,Reverse
+        None, Skip, Give1Card, KillTheOtherPlayer, Draw2, Draw4, Reverse, Block, Discard1Card,
     }
     //list of the tag names (used for auto-generating the tag text)
     private static string[] TagNames = new string[] {
         "Plant", "Creature", "Person", "Object",
         "Gross", "Real", "Cute", "Spooky", "Sneaky", "Digital", "Cool", "Melancholic", "Magical", "Evil","Bald",
 
-        "Devious","Jolly!"
+        "Devious","Jolly!","Wild"
     };
     public Card_Manager manager;//reference to card manager object
     public List<TagType> Tags;//what tags the card has
@@ -52,37 +57,58 @@ public class Card_Script : MonoBehaviour
         {
             targetPosition = transform.position;
         }
-        
+
     }
 
     public void SetSortingLayer(int layer)
-    { 
+    {
         int trueLayer = layer * 6;//space them out cuz each card uses a lot of layers
         GetComponent<SpriteRenderer>().sortingOrder = trueLayer;
-        Image_Rect.GetComponent<SpriteRenderer>().sortingOrder = trueLayer+1;
+        Image_Rect.GetComponent<SpriteRenderer>().sortingOrder = trueLayer + 1;
 
-        TagDivider.GetComponent<SpriteRenderer>().sortingOrder = trueLayer+2;
-        TagText.GetComponent<TextMeshPro>().sortingOrder = trueLayer+2;
-        DescriptionText.GetComponent<TextMeshPro>().sortingOrder = trueLayer+2;
-        NameText.GetComponent<TextMeshPro>().sortingOrder = trueLayer+2;
+        TagDivider.GetComponent<SpriteRenderer>().sortingOrder = trueLayer + 2;
+        TagText.GetComponent<TextMeshPro>().sortingOrder = trueLayer + 2;
+        DescriptionText.GetComponent<TextMeshPro>().sortingOrder = trueLayer + 2;
+        NameText.GetComponent<TextMeshPro>().sortingOrder = trueLayer + 2;
 
-        Overlay.GetComponent<SpriteRenderer>().sortingOrder = trueLayer+2;
+        Overlay.GetComponent<SpriteRenderer>().sortingOrder = trueLayer + 2;
         setIsFaceDown(IsFaceDown);
     }
     //handles the layering of the back card sprite.
     public void setIsFaceDown(bool isFaceDown)
     {
         IsFaceDown = isFaceDown;
-        if (isFaceDown )
+        if (isFaceDown)
         {
-            CardBack.GetComponent<SpriteRenderer>().sortingOrder = Overlay.GetComponent<SpriteRenderer>().sortingOrder+1;
-        } else
+            CardBack.GetComponent<SpriteRenderer>().sortingOrder = Overlay.GetComponent<SpriteRenderer>().sortingOrder + 1;
+        }
+        else
         {
-            CardBack.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder -1;
+            CardBack.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
         }
     }
     //copies the data from a carddata object onto this card.
     public void copyFromCardData(Card_Manager.CardData cardData)
+    {
+
+
+        TextMeshPro txt = NameText.GetComponent<TextMeshPro>();
+        txt.text = cardData.Name;
+        txt = DescriptionText.GetComponent<TextMeshPro>();
+        txt.text = cardData.Description;
+
+        SpriteRenderer spr = Image_Rect.GetComponent<SpriteRenderer>();
+        spr.sprite = cardData.CardImage;
+
+        Tags.Clear();
+        for (int i = 0; i < cardData.Tags.Length; i++)
+        {
+            Tags.Add(cardData.Tags[i]);
+        }
+        Ability = cardData.AbilityIndex;
+        updateTagsText();
+    }
+    public void copyFromCardData(AlmanacScript.CardData cardData)
     {
 
 
@@ -115,11 +141,22 @@ public class Card_Script : MonoBehaviour
         Tags.Add(tagToAdd);
         updateTagsText();
     }
+
+    //Adds a card back to the deck
+    public void Discard()
+    {
+        Card_Manager m = manager.GetComponent<Card_Manager>();
+        m.RemoveFromAllLists(gameObject);
+        m.Deck.Add(gameObject);
+        targetPosition = new Vector3(2, 0, 0);
+        setIsFaceDown(true);
+        m.ShuffleDeck();
+    }
     //clears all card tags, auto updates text
     public void clearTags()
     {
         Tags.Clear();
-        
+
         TextMeshPro txt = TagText.GetComponent<TextMeshPro>();
         string newText = "";
         txt.text = newText;
@@ -130,21 +167,21 @@ public class Card_Script : MonoBehaviour
         TextMeshPro txt = TagText.GetComponent<TextMeshPro>();
         string newText = "";
         newText = TagNames[(int)Tags[0]];
-        for (int i=1; i < Tags.Count;i++)
+        for (int i = 1; i < Tags.Count; i++)
         {
             newText = newText + " " + TagNames[(int)Tags[i]];
         }
         txt.text = newText;
     }
     //returns if a card shares a tag
-    public bool CheckIfSharesTag(List<TagType> OtherCardTags)
+    public bool CheckIfSharesTag(List<TagType> OtherCardTags, bool AllowWilds = true)
     {
 
-        for (int i = 0; i < Tags.Count;i++)
+        for (int i = 0; i < Tags.Count; i++)
         {
-            for (int j = 0; j < OtherCardTags.Count;j++)
+            for (int j = 0; j < OtherCardTags.Count; j++)
             {
-                if (Tags[i] == OtherCardTags[j])
+                if (Tags[i] == OtherCardTags[j] || (Tags[i] == TagType.Wild && AllowWilds))
                 {
                     return true;
                 }
@@ -152,6 +189,7 @@ public class Card_Script : MonoBehaviour
         }
         return false;
     }
+
     //checks if shares tag with last played card
     public bool CanBePlayed()
     {
@@ -160,106 +198,140 @@ public class Card_Script : MonoBehaviour
             Card_Manager.TurnType currentTurnType = manager.GetComponent<Card_Manager>().CurrentTurnType;
             Card_Script lastCardScript = manager.GetComponent<Card_Manager>().LastPlayedCard.GetComponent<Card_Script>();
 
-            if (CheckIfSharesTag(lastCardScript.Tags))
+            if (currentTurnType == Card_Manager.TurnType.GivingCard)
             {
-                if (currentTurnType == Card_Manager.TurnType.Normal)
+
+                return true;
+
+            }
+            if (currentTurnType == Card_Manager.TurnType.Discard1Card)
+            {
+
+                return true;
+
+            }
+            if (currentTurnType == Card_Manager.TurnType.Normal)
+            {
+                return CheckIfSharesTag(lastCardScript.Tags);
+            }
+            if (currentTurnType == Card_Manager.TurnType.Draw2)
+            {
+                if (Ability == AbilityType.Draw2 || Ability == AbilityType.Block)
                 {
-                    return true;
-                } 
-                else if (currentTurnType == Card_Manager.TurnType.Draw2)
-                {
-                    if (Ability == AbilityType.Draw2)
-                    {
-                        return true;
-                    }
+                    return CheckIfSharesTag(lastCardScript.Tags, false);
                 }
-                
+
             }
 
         }
 
-        return false; 
+        return false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //manage the offset when hovering over a playable card. also handle playing on click
-        offsetPosition = new Vector3(0, 0, 0);
-        if (CanBePlayed() && IsPlayerCard && manager.GetComponent<Card_Manager>().currentTurn == 0)
+        if (!Alm)
         {
-            Vector3 topCor = Camera.main.WorldToScreenPoint(new Vector3(targetPosition.x + 0.6f, targetPosition.y + 1.15f, 0.0f));
-            Vector3 botCor = Camera.main.WorldToScreenPoint(new Vector3(targetPosition.x - 0.6f, targetPosition.y - 1.15f, 0.0f));
-           
-            if ((Input.mousePosition.x < topCor.x && Input.mousePosition.x > botCor.x) && (Input.mousePosition.y < topCor.y && Input.mousePosition.y > botCor.y))
+
+
+            //manage the offset when hovering over a playable card. also handle playing on click
+            offsetPosition = new Vector3(0, 0, 0);
+            if (CanBePlayed() && IsPlayerCard && manager.GetComponent<Card_Manager>().currentTurn == 0)
             {
-                offsetPosition = new Vector3(0, .3f, 0);
-                if (Input.GetMouseButtonDown(0))
+                Vector3 topCor = Camera.main.WorldToScreenPoint(new Vector3(targetPosition.x + 0.6f, targetPosition.y + 1.15f, 0.0f));
+                Vector3 botCor = Camera.main.WorldToScreenPoint(new Vector3(targetPosition.x - 0.6f, targetPosition.y - 1.15f, 0.0f));
+
+                if ((Input.mousePosition.x < topCor.x && Input.mousePosition.x > botCor.x) && (Input.mousePosition.y < topCor.y && Input.mousePosition.y > botCor.y))
                 {
-                    if (manager.GetComponent<Card_Manager>().mouseControl)
+                    offsetPosition = new Vector3(0, .3f, 0);
+                    //shitty card balatro ratation thing. fucking bad cuz im dum tho T_T
+                    //Quaternion q = new Quaternion();
+                    //float dy = (topCor.y+offsetPosition.y-.5f) - Input.mousePosition.y;
+                    //float dx = (topCor.x) - Input.mousePosition.x;
+                    //q.eulerAngles = new Vector3(
+                    //    (5-(dy/65)*10)*3,
+                    //    (5-(dx/65)*10)*3
+                    //    ,0);
+                    //transform.rotation = q;
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        SetSortingLayer(100);
-                        followingCursor = true;
-                    } else
-                    {
-                        manager.GetComponent<Card_Manager>().PlayCard(gameObject, 0);
-                    }
-                        
-                    
-                }
-            }
-        }
-        else if (IsPlayerCard)
-        {
-            offsetPosition = new Vector3(0, -.3f, 0);
-        }
-        if (followingCursor)
-        {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector3(
-            transform.position.x - (transform.position.x - (mousePos.x)) * .08f,
-            transform.position.y - (transform.position.y - (mousePos.y)) * .08f,
-            0
-            );
-            if (Input.GetMouseButtonUp(0))
-            {
-                followingCursor = false;
-                manager.GetComponent<Card_Manager>().updatePlayerCardPositions();
-                if (IsPlayerCard)
-                {
-                    if (mousePos.x > -1.1f && mousePos.x < 1.1f)
-                    {
-                        if (mousePos.y > -2.1f && mousePos.y < 2.1f)
+                        if (manager.GetComponent<Card_Manager>().mouseControl)
+                        {
+                            SetSortingLayer(100);
+                            followingCursor = true;
+                        }
+                        else
                         {
                             manager.GetComponent<Card_Manager>().PlayCard(gameObject, 0);
                         }
-                    }
-                } else
-                {
-                    SetSortingLayer(99);
-                    if (mousePos.y < -2.8) {
-                        manager.GetComponent<Card_Manager>().PlayerDrawCards(0, manager.GetComponent<Card_Manager>().GetTopCard());
+
+
                     }
                 }
-                
+            }
+            else if (IsPlayerCard)
+            {
+                offsetPosition = new Vector3(0, -.3f, 0);
+            }
+            if (followingCursor)
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector3(
+                transform.position.x - (transform.position.x - (mousePos.x)) * .08f,
+                transform.position.y - (transform.position.y - (mousePos.y)) * .08f,
+                0
+                );
+                if (Input.GetMouseButtonUp(0))
+                {
+                    followingCursor = false;
+                    manager.GetComponent<Card_Manager>().updatePlayerCardPositions();
+                    if (IsPlayerCard)
+                    {
+                        if (mousePos.x > -1.1f && mousePos.x < 1.1f)
+                        {
+                            if (mousePos.y > -2.1f && mousePos.y < 2.1f)
+                            {
+                                manager.GetComponent<Card_Manager>().PlayCard(gameObject, 0);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        SetSortingLayer(99);
+                        if (mousePos.y < -2.8)
+                        {
+                            manager.GetComponent<Card_Manager>().PlayerDrawCards(0, manager.GetComponent<Card_Manager>().GetTopCard());
+                        }
+                    }
+
+                }
+            }
+            else
+            {
+
+                transform.position = new Vector3(
+                transform.position.x - (transform.position.x - (targetPosition.x + offsetPosition.x)) * .03f,
+                transform.position.y - (transform.position.y - (targetPosition.y + offsetPosition.y)) * .03f,
+                transform.position.z - (transform.position.z - (targetPosition.z + offsetPosition.z)) * .03f
+                );
             }
         }
-        else
-        {
-
-            transform.position = new Vector3(
-            transform.position.x - (transform.position.x - (targetPosition.x + offsetPosition.x)) * .03f,
-            transform.position.y - (transform.position.y - (targetPosition.y + offsetPosition.y)) * .03f,
-            transform.position.z - (transform.position.z - (targetPosition.z + offsetPosition.z)) * .03f
-            );
-        }
-
 
         //move 2 target pos 4 smoother anims
-        
-        
 
 
+
+
+    }
+
+    public void setPos(float x, float y)
+    {
+        transform.position = new Vector3(x, y, transform.position.z);
+    }
+    public Vector2 getPos()
+    {
+        return new Vector2(transform.position.x, transform.position.y);
     }
 
 }

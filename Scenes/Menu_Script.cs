@@ -4,7 +4,11 @@ public class Menu_Script : MonoBehaviour
 {
     public void playGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Gameplay");
+    }
+    public void playAlmanac()
+    {
+        SceneManager.LoadScene("Almanac");
     }
 
 }
